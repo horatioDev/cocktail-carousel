@@ -1,7 +1,3 @@
-//The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM
-
-// Cocktail Carousel
-// Add an event listener to call getCocktails when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
   const button = document.querySelector('button');
 
@@ -22,13 +18,13 @@ function getCocktailsOnLoad() {
     // If the button is clicked later, this will set the value for fetching
     input.value = cocktail;
   }
-};
+}
 
 function getCocktails() {
   let cocktail = document.querySelector('input').value.trim();
 
   if (hasWhiteSpace(cocktail)) {
-    cocktail = cocktail.split(' ').join('%20');
+    cocktail = cocktail.split(' ').join('_');
   }
 
   fetch(`https://thecocktaildb.com/api/json/v1/1/search.php?s=${cocktail}`)
@@ -38,7 +34,7 @@ function getCocktails() {
       displayCocktails(cocktails);
     })
     .catch(err => console.log(err));
-};
+}
 
 function displayCocktails(arr) {
   const carouselSlide = document.querySelector('.carousel-slide');
@@ -67,8 +63,8 @@ function displayCocktails(arr) {
   });
 
   document.querySelector('input').value = '';
-};
+}
 
 function hasWhiteSpace(str) {
   return /\s/g.test(str);
-};
+}
