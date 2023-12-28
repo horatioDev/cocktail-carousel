@@ -1,5 +1,6 @@
 //The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM
 
+<<<<<<< HEAD
 // Cocktail Carousel
 // Add an event listener to call getCocktails when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +24,9 @@ function getCocktailsOnLoad() {
     input.value = cocktail;
   }
 };
+
+// Cocktail Carousel
+// Add an event listener to call getCocktails when the DOM is fully loaded
 
 function getCocktails() {
   let cocktail = document.querySelector('input').value.trim();
