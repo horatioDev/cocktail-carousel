@@ -1,3 +1,5 @@
+// Cocktail Carousel
+// Add an event listener to call getCocktails when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
   const button = document.querySelector('button');
 
