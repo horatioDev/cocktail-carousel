@@ -18,7 +18,7 @@ The Cocktail Carousel is a web-based application developed using HTML, CSS, and 
 ## Features
 
 - **Dynamic Carousel**: Display cocktails in a carousel layout.
-- **API Integration**: Fetch cocktail data using an external API.
+- **API Integration**: Fetch cocktail data using an external [TheCocktailDB](https://www.thecocktaildb.com/api.php) API.
 - **Interactive UI**: User-friendly interface for browsing cocktails.
 
 ## Installation
