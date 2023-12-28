@@ -1,25 +1,11 @@
 //The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM
 
-// document.querySelector('button').addEventListener('click', async () => {
-//   const MY_COCKTAIL_KEY = '1'
-//   const inputVal = document.querySelector("input").value;
-//   const COCKTAIL_URL = `https://www.thecocktaildb.com/api/json/v1/${MY_COCKTAIL_KEY}/search.php?s=${inputVal}`
-
-//   try {
-//     const cocktailResponse = await fetch(COCKTAIL_URL)
-//     if (!cocktailResponse.ok) throw new Error(`HTTP error! status: ${cocktailResponse.status}`)
-
-//     const cocktailImgData = await cocktailResponse.json()
-
-//     document.querySelector('img').src = cocktailImgData.drinks[0].strDrinkThumb
-//     document.querySelector('h2').innerText = cocktailImgData.drinks[0].strDrink
-//     document.querySelector('h3').innerText = cocktailImgData.drinks[0].strInstructions
-//   } catch (error) {
-//     console.log('Caught an error!', error.message)
-//   }
-// })
-
 // Cocktail Carousel
+// Add an event listener to call getCocktails when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+  getCocktails();
+});
+
 document.querySelector('button').addEventListener('click', getCocktails);
 
 function getCocktails() {
