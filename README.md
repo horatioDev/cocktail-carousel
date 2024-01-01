@@ -5,6 +5,7 @@ Welcome to the **Cocktail Carousel** project! This project showcases a collectio
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Live Demo](click-automatic-carousel-horatio.netlify.app)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
